@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0; /* Reset margin */
+}
+body {
+    font-family: 'Poppins', 'sans-serif';
+    color:rgb(3, 33, 66);
+    background-color: rgba(128, 128, 128, 0.216);
+        
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-top: 0;
+    color:blueviolet;
+}
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links a {
+    text-decoration: none;
+    color: rgba(0, 8, 17, 0.616);
+}
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+.navbar-menu-toggle {
+    display: none; /* Hidden by default */
+}
+
+
+/* Side Navbar */
+.side-navbar {
+    background-color:rgba(10, 46, 85, 0.818);
+    width: 50%;
+    color: azure;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 1s;
+   
+}
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+.side-navbar-link a {
+    text-decoration: none;
+    color: azure;
+}
+.side-navbar-link a:hover {
+    text-decoration: underline;
+}.decrese{
+    height: 300px;
+    width: 300px;
+}.header{
+    display: flex;
+    justify-content: center;
+    gap:50px ;
+    color:rgb(37, 52, 68);
+margin-top: 30px;
+padding: 50px;
+
+}.header-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgba(35, 75, 118, 0.818);
+    color:white;
+    border: none;
+}.service{
+padding: 20px;
+}.service-1{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.service-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}.service-2 div{
+    background-color: rgba(35, 75, 118, 0.818);
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    
+}.service-2 div p{
+margin-top: 10px;
+}
+/*new arrival*/
+.img-1{
+    height: 200px;
+    width: 200px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+    
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+    
+}
+.new-arrival button{
+padding-left: 10%;
+padding-right: 10%;
+padding-top: 5%;
+padding-bottom: 5%;
+margin-top: 10px;
+background-color:rgba(128, 128, 128, 0.964);
+    color:rgb(3, 33, 66);
+position: absolute;
+top: 55%;
+left: 10%;
+border-radius: 10px;
+border: none;}
+.news{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+}.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    background-color: black solid 3px;
+    margin: 10px;
+}.news button{
+    margin-top: 5px;
+    color: white;
+    background-color: rgba(35, 75, 118, 0.818);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color:rgb(3, 33, 66); 
+    color: white;
+}
+/*collections*/
+.product-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}.product-search input:focus{
+    outline: none;
+}.products{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+
+}.product-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.contact{
+    background-color: rgba(35, 75, 118, 0.818) ;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+}.Name{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    
+}.Email{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;}
+    .Message{
+        width: 100%;
+        height: 90px;
+        margin-top: 10px;}
+        .button button{
+            padding: 10px;
+            background-color: rgba(0, 0, 255, 0.662);
+            color: white;
+            border: none;
+
+        }.button{
+            padding-bottom: 40px;
+        }
+.contact div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Media Query */
+@media screen and (max-width: 700px) {
+    .navbar-menu-toggle {
+        display: block; /* Show on mobile */
+    }
+    .navbar-links {
+        display: none; /* Hide links on mobile */
+
+    }
+    .decrese{
+        display: none;
+    }.service-1{
+        display: none;
+    }.service-2{
+        flex-direction: column;
+    }
+}
